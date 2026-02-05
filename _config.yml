@@ -11,8 +11,7 @@ plugins:
 
 # Theme options
 # This site uses a fixed brown/teal color scheme (no light/dark mode switching)
-style: dark
-# listen_for_clients_preferred_style: true # true or false (default)
+# No style switching - colors are defined directly in main.scss
 
 # Fonts
 # disable_google_fonts: false # set true to prevent loading fonts.googleapis.com

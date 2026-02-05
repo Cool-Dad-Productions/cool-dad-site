@@ -2,15 +2,80 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Use @import for compatibility with GitHub Pages (libsass)
-@import "base";
+/**
+ * Theme variables - cooldad.computer style guide
+ * Fixed brown/teal color scheme (no light/dark mode switching)
+ */
+:root {
+  /* Brand colors */
+  --brand-brown: #6B4A3A;
+  --brand-teal: #CFEFF2;
 
-// Import light theme and include its variables first
-@import "light";
-@include theme();
+  /* Background colors - warm brown palette */
+  --background-color: #6B4A3A;           /* Brand brown - main page */
+  --background-color-elevated: #5a3d2f;  /* Darker brown - cards, nav, code */
+  --background-color-light: #7d5645;     /* Lighter brown - subtle divisions */
 
-// Then import dark theme and include inside media query
-@import "dark";
-@media (prefers-color-scheme: dark) {
-  @include theme();
+  /* Text colors - teal on brown */
+  --base-color: #CFEFF2;
+  --text-color: var(--brand-teal);
+  --text-color-secondary: #b5c9cc;       /* Muted teal - 85% */
+  --text-color-muted: #9dc4c8;           /* Soft teal - 70% */
+
+  /* Border colors - brown variations */
+  --border-color: #7d5645;               /* Lighter brown */
+  --border-color-secondary: #5a3d2f;     /* Darker brown */
+  --border-color-subtle: #6f4936;        /* Mid-brown */
+  --border: solid 1px var(--border-color);
+
+  /* Link colors - teal with white hover */
+  --link-color: var(--brand-teal);
+  --link-color-hover: #ffffff;           /* White for maximum contrast */
+  --link-color-visited: #9dc4c8;         /* Muted teal */
+  --link-color-active: #ffffff;          /* White */
+
+  /* Interactive states */
+  --focus-outline-color: var(--brand-teal);
+  --focus-glow: rgba(207, 239, 242, 0.2);
+
+  /* Button colors */
+  --button-bg: #5a3d2f;
+  --button-bg-hover: #4a2f1f;
+  --button-bg-active: #3a2617;
+  --button-bg-disabled: #7d5645;
+
+  /* Selection */
+  --selection-background: var(--brand-teal);
+  --selection-text: var(--brand-brown);
+
+  /* Form elements */
+  --placeholder-color: var(--text-color-muted);
+
+  /* Semantic colors - lighter variants for brown background */
+  --color-success: #a8d8ae;              /* Soft mint green */
+  --color-warning: #f5d98b;              /* Warm cream */
+  --color-error: #f4a5a8;                /* Soft coral */
+
+  /* Code syntax highlighting */
+  --code-color-1: #9dc4c8;               /* Comments - muted teal */
+  --code-color-2: #5a3d2f;               /* Highlight background */
+  --code-color-3: #f4a5a8;               /* Error text */
+  --code-color-4: #4a2f1f;               /* Error background */
+  --code-color-5: #d4b8ff;               /* Keywords - lighter purple */
+  --code-color-6: #a8d8ae;               /* Preproc - success green */
+  --code-color-7: #f5d98b;               /* Deleted/Constants/Variables */
+  --code-color-8: var(--brand-teal);     /* Heading */
+  --code-color-9: #a8d8ae;               /* Inserted/Functions/Classes */
+  --code-color-10: #b5c9cc;              /* Output */
+  --code-color-11: #9dc4c8;              /* Prompt */
+  --code-color-12: #d4b8ff;              /* Subheading */
+  --code-color-13: var(--brand-teal);    /* Types */
+  --code-color-14: #f5d98b;              /* Numbers */
+  --code-color-15: #f5d98b;              /* Strings */
+  --code-color-16: var(--brand-teal);    /* Attributes/Tags */
+  --code-color-17: #ffffff;              /* Entity */
+  --code-color-18: #7d5645;              /* Whitespace */
 }
+
+// Import base styles
+@import "base";
