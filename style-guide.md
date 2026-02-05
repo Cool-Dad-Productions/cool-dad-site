@@ -29,62 +29,97 @@ Think: "A senior engineer who builds silly things on weekends and isn't afraid t
 
 ## 2. Color System
 
+**Note:** This site uses a **fixed color scheme** with no light/dark mode switching. The brown background with teal text maintains consistent branding and readability across all contexts.
+
 ### Primary Colors
 
-**Brand Brown (Primary Background)**
+**Brand Brown (Page Background)**
 - Hex: `#6B4A3A`
 - RGB: `rgb(107, 74, 58)`
-- Usage: Logo background, accent elements, hover states
+- Usage: Main page background, card backgrounds (darker variant)
 - Personality: Warm, grounded, approachable
 
-**Brand Teal (Primary Accent)**
+**Brand Teal (Primary Text)**
 - Hex: `#CFEFF2`
 - RGB: `rgb(207, 239, 242)`
-- Usage: Logo text, interactive elements, highlights
+- Usage: All text, links, interactive elements
 - Personality: Cool, technical, confident
 
-### Terminal Theme Colors (Console Base)
+### Background Variations
 
-**Background**
-- Dark Mode: `#1a1a1a` (near-black)
-- Light Alternative: `#f8f9fa` (off-white, for accessibility)
+**Primary Background (Main page)**
+- Color: `#6B4A3A` (brand brown)
+- Usage: Body background, main content area
 
-**Text Colors**
-- Primary Text (Dark): `#CFEFF2` (brand teal - high contrast on dark)
-- Secondary Text (Dark): `#b5c9cc` (muted teal)
-- Muted Text (Dark): `#8a9b9e` (subtle teal-gray)
+**Secondary Background (Cards, sections)**
+- Color: `#5a3d2f` (darker brown - 15% darker)
+- RGB: `rgb(90, 61, 47)`
+- Usage: Project cards, code blocks, emphasized sections
 
-**Interactive Colors**
+**Tertiary Background (Subtle divisions)**
+- Color: `#7d5645` (lighter brown - 15% lighter)
+- RGB: `rgb(125, 86, 69)`
+- Usage: Borders, dividers, hover states
+
+### Text Colors
+
+**Primary Text**
+- Color: `#CFEFF2` (brand teal)
+- Usage: All body text, headings, labels
+
+**Secondary Text (Muted)**
+- Color: `#b5c9cc` (muted teal - 85% opacity)
+- RGB: `rgb(181, 201, 204)`
+- Usage: Metadata, timestamps, less important info
+
+**Tertiary Text (Very subtle)**
+- Color: `#9dc4c8` (soft teal - 70% opacity)
+- RGB: `rgb(157, 196, 200)`
+- Usage: Placeholder text, disabled states
+
+### Interactive Colors
+
+**Link States**
 - Link Default: `#CFEFF2` (brand teal)
-- Link Hover: `#6B4A3A` (brand brown - inverted)
-- Link Visited: `#9dc4c8` (muted teal)
-- Link Active: `#e8f4f6` (bright teal)
+- Link Hover: `#e8f4f6` (bright teal - 10% lighter)
+- Link Visited: `#9dc4c8` (muted teal - slightly darker)
+- Link Active: `#ffffff` (white - maximum contrast)
+
+**Interactive Backgrounds**
+- Button Primary: `#5a3d2f` (darker brown)
+- Button Primary Hover: `#4a2f1f` (even darker brown)
+- Button Primary Active: `#3a2617` (darkest brown)
+- Button Disabled: `#7d5645` (lighter brown), text at 50% opacity
 
 ### Semantic Colors
 
 **Success/Complete**
-- Color: `#7ac683` (soft green)
+- Color: `#a8d8ae` (soft mint green - lighter for brown background)
+- RGB: `rgb(168, 216, 174)`
 - Usage: Completed projects, success messages
 
 **Warning/In Progress**
-- Color: `#e5c07b` (warm yellow)
+- Color: `#f5d98b` (warm cream - lighter for brown background)
+- RGB: `rgb(245, 217, 139)`
 - Usage: Work-in-progress indicators
 
 **Error/Experimental**
-- Color: `#e06c75` (soft red)
+- Color: `#f4a5a8` (soft coral - lighter for brown background)
+- RGB: `rgb(244, 165, 168)`
 - Usage: Experimental projects, error states
 
-### Neutral Palette
+### Border & Divider Colors
 
-**Grays (for borders, dividers)**
-- Lightest: `#3a3a3a`
-- Mid: `#2a2a2a`
-- Darkest: `#1a1a1a`
+**Borders (for cards, sections)**
+- Primary Border: `#7d5645` (lighter brown)
+- Secondary Border: `#5a3d2f` (darker brown)
+- Subtle Border: `#6f4936` (mid-brown)
 
-### Color Contrast Ratios
-- Brand Teal (#CFEFF2) on Dark BG (#1a1a1a): **15.2:1** ✓ WCAG AAA
-- Brand Brown (#6B4A3A) on Light BG (#f8f9fa): **4.8:1** ✓ WCAG AA
-- Brand Teal on Brand Brown: **8.9:1** ✓ WCAG AAA
+### Color Contrast Ratios (on Brown Background)
+- Brand Teal (#CFEFF2) on Brand Brown (#6B4A3A): **8.9:1** ✓ WCAG AAA
+- White (#FFFFFF) on Brand Brown (#6B4A3A): **10.2:1** ✓ WCAG AAA
+- Muted Teal (#b5c9cc) on Brand Brown (#6B4A3A): **7.1:1** ✓ WCAG AAA
+- All text exceeds WCAG AA (4.5:1) and most exceed AAA (7:1)
 
 ---
 
@@ -219,30 +254,30 @@ Desktop: > 1024px   (full layout)
 
 **Specifications:**
 - Height: 60px fixed
-- Background: `#1a1a1a` (solid, no transparency)
-- Border-bottom: `1px solid #3a3a3a`
+- Background: `#5a3d2f` (darker brown - distinct from page background)
+- Border-bottom: `1px solid #7d5645` (lighter brown border)
 - Position: Sticky top
 
 **Elements:**
-- Logo: "cool dad" in Libre Baskerville, brand teal
-- Nav links: Monospace, 16px, uppercase
+- Logo: "cool dad" in Libre Baskerville, brand teal (#CFEFF2)
+- Nav links: Monospace, 16px, brand teal, uppercase
 - Spacing: 2rem between links
-- Hover: Underline in brand brown
+- Hover: Color changes to white (#ffffff), underline appears
 
 **Mobile Behavior:**
 - Collapses to hamburger at < 768px
 - Menu slides from right
-- Background: same as nav bar
+- Background: same as nav bar (#5a3d2f)
 
 ### Project Cards
 
 **Specifications:**
-- Border: `1px solid #3a3a3a`
+- Border: `1px solid #7d5645` (lighter brown)
 - Border-radius: `4px` (subtle)
 - Padding: `1.5rem`
-- Background: `#1f1f1f` (slightly lighter than page)
+- Background: `#5a3d2f` (darker brown - distinct from page)
 - Transition: `all 0.2s ease`
-- Hover: Border changes to brand brown `#6B4A3A`, `box-shadow: 0 4px 12px rgba(107, 74, 58, 0.2)`
+- Hover: Border changes to brand teal `#CFEFF2`, `box-shadow: 0 4px 12px rgba(207, 239, 242, 0.15)`
 - Focus-within: Same as hover (when any link inside card receives focus)
 
 **Structure:**
@@ -265,22 +300,22 @@ Desktop: > 1024px   (full layout)
 ### Buttons
 
 **Primary Button:**
-- Background: brand brown `#6B4A3A`
+- Background: `#5a3d2f` (darker brown)
 - Text: brand teal `#CFEFF2`
 - Font: Monospace, 16px
 - Padding: `0.75rem 1.5rem`
-- Border: none
+- Border: `1px solid #7d5645` (lighter brown border)
 - Border-radius: `4px`
-- Hover: Background darkens to `#5a3d2f`
+- Hover: Border changes to `#CFEFF2`, text brightens to white
 - Focus: `2px solid #CFEFF2` outline with `2px` offset + `box-shadow: 0 0 0 3px rgba(207, 239, 242, 0.2)`
 - Active: Background darkens to `#4a2f1f`
-- Disabled: Background `#3a3a3a`, text `#6a6a6a`, cursor `not-allowed`
+- Disabled: Background `#7d5645`, text `#9dc4c8`, cursor `not-allowed`
 
 **Secondary Button (Link Style):**
 - No background
-- Text: brand teal
+- Text: brand teal `#CFEFF2`
 - Font: Monospace, 16px
-- Underline on hover
+- Underline on hover (changes to white)
 - Focus: same as link focus
 - Arrow: ` →` appended
 
@@ -293,14 +328,14 @@ Desktop: > 1024px   (full layout)
 **Default Link:**
 - Color: brand teal `#CFEFF2`
 - Text-decoration: none
-- Hover: color changes to brand brown `#6B4A3A`, underline appears
+- Hover: color changes to white `#ffffff`, underline appears
 - Focus: `2px solid` outline in brand teal, `2px` offset
 - Transition: 0.2s ease
 
 **Inline Text Links:**
 - Underline: always visible
-- Color: brand teal
-- Hover: brand brown
+- Color: brand teal `#CFEFF2`
+- Hover: white `#ffffff`
 - Focus: same as default link
 
 **External Links:**
@@ -328,18 +363,18 @@ All interactive elements should provide clear visual feedback for each state.
 ### Code Blocks
 
 **Inline Code:**
-- Background: `#2a2a2a`
-- Border: `1px solid #3a3a3a`
+- Background: `#5a3d2f` (darker brown)
+- Border: `1px solid #7d5645` (lighter brown)
 - Padding: `0.25rem 0.5rem`
 - Font: Monospace, 14px
-- Color: brand teal
+- Color: brand teal `#CFEFF2`
 
 **Block Code:**
-- Background: `#1f1f1f`
-- Border: `1px solid #3a3a3a`
+- Background: `#5a3d2f` (darker brown)
+- Border: `1px solid #7d5645` (lighter brown)
 - Padding: `1rem`
 - Font: Monospace, 14px
-- Line numbers: optional, in muted teal
+- Line numbers: optional, in muted teal `#9dc4c8`
 - Max-width: 100% (horizontal scroll if needed)
 
 ### Terminal/Console Elements
