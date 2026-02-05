@@ -6,6 +6,11 @@ gemspec
 
 gem 'webrick'
 
+# Required for Ruby 3.4.0+ (no longer default gems)
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+
 # Use libsass via jekyll-sass-converter 2.x to avoid Dart Sass
 # deprecation warnings for @import during local development.
 # Pin Jekyll to a version compatible with converter 2.x.
