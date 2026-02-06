@@ -100,10 +100,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  color: var(--link-color-visited, var(--link-color));
-}
-
 a:active {
   color: var(--link-color-active, var(--link-color));
 }
@@ -212,6 +208,15 @@ header p {
   position: sticky;
   top: 0;
   z-index: 100;
+
+  h1 {
+    text-align: center;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: var(--link-color-hover);
+  }
 }
 
 .menu ul {
@@ -243,7 +248,7 @@ header p {
 
 .menu ul li a:hover {
   color: var(--link-color-hover);
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -254,6 +259,14 @@ header p {
 
 .menu ul li a[aria-current="page"] {
   text-decoration: underline;
+}
+
+.social-links {
+  text-align: center;
+
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 /**

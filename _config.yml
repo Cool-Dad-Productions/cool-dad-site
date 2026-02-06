@@ -9,6 +9,30 @@
 plugins:
   - jekyll-seo-tag
 
+# social icons and sharing options
+social:
+#  - icon:	twitter
+#    url:	https://twitter.com/dirkfabisch
+#    desc: Follow me on twitter
+#    share_url: http://twitter.com/share
+#    share_title: ?text=
+#    share_link: "&amp;url="
+
+  - icon:	github
+    url:	https://github.com/colestrode
+    desc:	Find me on Github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	linkedin
+    url:	https://www.linkedin.com/in/colestrode/
+    desc:	This is my corporate face
+    share_url:
+    share_title:
+    share_link:
+
+
 # Theme options
 # This site uses a fixed brown/teal color scheme (no light/dark mode switching)
 # No style switching - colors are defined directly in main.scss
@@ -30,5 +54,3 @@ plugins:
 #   #   _paq.push(['setTrackerUrl', 'https://analytics.example.com/matomo.php']);
 #   #   _paq.push(['setSiteId', '1']);
 #
-# # Extend CSP to allow your tracker sources (script-src/connect-src/img-src as needed)
-# # csp_extra: "script-src 'self' https://analytics.example.com; connect-src 'self' https://analytics.example.com; img-src 'self' https://analytics.example.com;"

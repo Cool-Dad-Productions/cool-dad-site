@@ -2,15 +2,19 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
   <div class="menu">
+    <a href="{{site.url}}{{site.baseurl}}"><h1>Cool Dad Productions</h1></a>
+  </div>
+  <div class="social-links">
     <ul>
-      {%- for path in page_paths -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.title -%}
-        <li>
-          <a href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ my_page.title | escape }}</a>
-        </li>
-        {%- endif -%}
-      {%- endfor -%}
+    {% for social in site.social %}
+      {% if social.url %}
+          <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+            <i class="fa-brands fa-{{ social.icon }}"></i>
+          </a>
+          &nbsp;
+      {% endif %}
+    {% endfor %}
     </ul>
   </div>
+
 </header>
