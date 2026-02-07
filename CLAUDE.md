@@ -54,6 +54,12 @@ description: "Short description"
 - Tags: 2-5 tags, lowercase (e.g., python, tool, learning-project)
 - Description: 2-3 sentences, max 280 characters
 
+## Skills
+
+Custom Claude Code skills for this project:
+
+- `/new-post` - Scaffold a new project blog post with proper frontmatter and structure. Prompts for title, tagline, description, and tags.
+
 ## Styling
 
 Consult `branding/style-guide.md` for all style decisions including colors, typography, spacing, and components.
