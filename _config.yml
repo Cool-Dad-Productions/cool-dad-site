@@ -30,25 +30,4 @@ social:
     share_title:
     share_link:
 
-
-# Theme options
-# This site uses a fixed brown/teal color scheme (no light/dark mode switching)
-# No style switching - colors are defined directly in main.scss
-
-# Fonts
-# disable_google_fonts: false # set true to prevent loading fonts.googleapis.com
-
-# Tracking (generic, optional; loads only in production)
-# tracking:
-#   script_src:
-#     - https://analytics.example.com/matomo.js
-#   async: true   # default true
-#   defer: false  # default false
-#   # Optional inline init snippet (requires CSP allowance if used)
-#   # init: |
-#   #   var _paq = window._paq = window._paq || [];
-#   #   _paq.push(['trackPageView']);
-#   #   _paq.push(['enableLinkTracking']);
-#   #   _paq.push(['setTrackerUrl', 'https://analytics.example.com/matomo.php']);
-#   #   _paq.push(['setSiteId', '1']);
-#
+google_tag_manager: G-NXYERSH9X1
