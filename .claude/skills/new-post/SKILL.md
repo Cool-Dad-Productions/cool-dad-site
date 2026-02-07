@@ -11,19 +11,24 @@ Create a new Jekyll blog post for cooldad.computer following the established pro
 
 ## Process
 
-1. **Gather information** - Ask the user for:
+1. **Create a git branch** for the new post:
+   - Format: `post/slugified-title`
+   - Example: `post/my-cool-project`
+   - Checkout the new branch before creating files
+
+2. **Gather information** - Ask the user for:
    - Project title (used for filename and frontmatter)
    - Tagline (short phrase for the summary heading, e.g., "Dungeon Guide meets LLMs")
    - Description (2-3 sentences, max 280 chars)
    - Tags (2-5 lowercase tags)
 
-2. **Generate the filename** using today's date and slugified title:
+3. **Generate the filename** using today's date and slugified title:
    - Format: `_posts/YYYY-MM-DD-slugified-title.md`
    - Example: `_posts/2026-02-07-my-cool-project.md`
 
-3. **Create the post** using the template structure from `template.md` in this skill directory
+4. **Create the post** using the template structure from `template.md` in this skill directory
 
-4. **Open for editing** - After creating, let the user know they can fill in the sections
+5. **Open for editing** - After creating, let the user know they can fill in the sections
 
 ## Content Guidelines
 
