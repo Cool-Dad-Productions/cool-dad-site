@@ -5,18 +5,16 @@
     <a href="{{site.url}}{{site.baseurl}}"><h1>Cool Dad Productions</h1></a>
   </div>
   <div class="social-links">
-    <ul>
-      <a href="{{ "/about" | prepend: site.baseurl }}">About</a> &nbsp;
-      {% for social in site.social %}
-        {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
-              <i class="fa-brands fa-{{ social.icon }}"></i>
-            </a>
-            &nbsp;
-        {% endif %}
-      {% endfor %}
-      <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}" title="RSS"><i class="fa fa-rss"></i></a>
-    </ul>
+    <a href="{{ "/about" | prepend: site.baseurl }}">About</a> &nbsp;
+    {% for social in site.social %}
+      {% if social.url %}
+          <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+            <i class="fa-brands fa-{{ social.icon }}"></i>
+          </a>
+          &nbsp;
+      {% endif %}
+    {% endfor %}
+    <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}" title="RSS"><i class="fa fa-rss"></i></a>
   </div>
 
 </header>
