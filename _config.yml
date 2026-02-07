@@ -1,23 +1,21 @@
-# Example Site settings
+# Site settings
+title: Cool Dad Productions
+description: Weird little coding projects from cooldad.computer
+url: "https://cooldad.computer"
+author: Cole Strode
+
+theme: jekyll-theme-console
 
 #header_pages:
 #  - index.md
 #  - about.md
 
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
-
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
 # social icons and sharing options
 social:
-#  - icon:	twitter
-#    url:	https://twitter.com/dirkfabisch
-#    desc: Follow me on twitter
-#    share_url: http://twitter.com/share
-#    share_title: ?text=
-#    share_link: "&amp;url="
-
   - icon:	github
     url:	https://github.com/colestrode
     desc:	Find me on Github

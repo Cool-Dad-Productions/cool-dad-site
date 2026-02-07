@@ -30,6 +30,7 @@ Site runs at http://localhost:4000
 - Ruby with Bundler
 - SCSS for styling
 - GitHub Pages compatible
+- RSS feed via jekyll-feed plugin (`/feed.xml`)
 
 ## Content Guidelines
 
