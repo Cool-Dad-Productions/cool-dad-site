@@ -3,7 +3,7 @@ layout: default
 permalink: /about
 ---
 
-# (Re-)Learning Modern Webdev in Public
+### (Re-)Learning Modern Webdev in Public
 
 I'm a big fan of silly, whimsical, or downright dumb projects as a way to stay engaged in learning. By stripping away the complexity of strict requirements and perfection, I can focus on the meta aspects of projects: tooling, processes, libraries, frameworks, platforms, and approaches.
 
