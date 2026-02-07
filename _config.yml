@@ -4,7 +4,7 @@ description: Weird little coding projects from cooldad.computer
 url: "https://cooldad.computer"
 author: Cole Strode
 
-theme: jekyll-theme-console
+remote_theme: b2a3e8/jekyll-theme-console
 
 #header_pages:
 #  - index.md
@@ -13,6 +13,7 @@ theme: jekyll-theme-console
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-remote-theme
 
 # social icons and sharing options
 social:
