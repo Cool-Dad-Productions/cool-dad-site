@@ -6,6 +6,7 @@
   </div>
   <div class="social-links">
     <ul>
+      <a href="{{ "/about" | prepend: site.baseurl }}">About</a> &nbsp;
     {% for social in site.social %}
       {% if social.url %}
           <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
