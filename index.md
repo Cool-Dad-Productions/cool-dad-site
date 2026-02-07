@@ -1,5 +1,5 @@
 ---
-title: /
+title: Cool Dad Productions
 layout: home
 permalink: /
 ---
