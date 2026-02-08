@@ -87,11 +87,12 @@ Some existing assets:
 
 ## Reflections
 
-The story of building it. Challenges faced, what worked, what didn't. Be honest and conversational.
-I've spun up a few Github Pages sites, so choosing that as a platform was an easy choice. I leaned heavily on AI for creating style guides and styling the site itself. I included some of the most relevant prompts below.
+I've spun up a few Github Pages sites, so choosing that as a platform was an easy choice. I leaned heavily on AI for creating style guides and styling the site itself. I included some of the most relevant prompts above.
 
-The style guide approach is a great pattern for apps and sites built with AI. It creates a human readable, but structured natural language definition of styling that coding agents can consume and conform to. This is a pattern I want to extend into other areas of code.
+I set up apex domain routing and a `cname` for the `www` subdomain. Github documents this well; it was a simple copy-paste. Setting up other project-specific subdomains is trivial and doesn't interfere with the apex DNS settings.
 
-I created a Claude skill to add new pages. In the past, I've created bash scripts to do this, but wanted to experiment. Obviously, this creates vendor lock in, though it would be easy to convert the skill to some other markdown based AI interface.
+The style guide approach I took is a great pattern for apps and sites built with AI. It creates a human readable, but structured natural language definition of styling that coding agents can consume and conform to. This is a pattern I want to extend into other areas of code.
 
-I do worry a bit about usage/token consumption with this skill approach. I think my next step will be to create a well documented bash script, that way Claude just needs to know the interface and execute the script. Properly done, that should reduce token usage a bit.
+I created a Claude skill to add new pages. In the past, I've created bash scripts to do this, but wanted to experiment. Obviously this creates vendor lock in, though it would be easy to convert the skill to some other markdown based AI interface.
+
+I do worry a bit about usage/token consumption with this skill approach. I think my next step will be to create a well documented bash script, that way Claude just needs to know the interface and execute the script. Properly done, that should reduce token usage a bit. After all, [tokens are the new oil](https://tidyfirst.substack.com/p/tokens-the-new-oil).
