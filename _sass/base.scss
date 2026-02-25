@@ -583,6 +583,25 @@ pre code {
 }
 
 /**
+ * Video embed (responsive 16:9)
+ */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; // 16:9
+  margin: $spacing-lg 0;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-color, #7d5645);
+    border-radius: 4px;
+  }
+}
+
+/**
  * Lightbox
  */
 .lightbox {
