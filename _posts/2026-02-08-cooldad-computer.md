@@ -112,7 +112,7 @@ I've spun up a few Github Pages sites, so choosing that as a platform was an eas
 
 I set up apex domain routing and a `cname` for the `www` subdomain. Github documents this well; it was a simple copy-paste. Setting up other project-specific subdomains is trivial and doesn't interfere with the apex DNS settings.
 
-I used [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) as the template. I decided to fork instead of installing the theme, since this gives me more control over styling and implementation. However, I have a terrible habit of accidentally creating PRs against the fork when I just want to commit to my own repo. Given how much I'll adapt this theme to my own needs, I don't care about getting changes from the upstream or contributing back. So I disconnected from the fork tree. PR problem solved!
+I used [jekyll-theme-console](https://github.com/b2a3e8/jekyll-theme-console) as the template. I decided to fork instead of installing the theme, since this gives me more control over styling and implementation. However, I have a terrible habit of accidentally creating PRs against the upstream when I just want to commit to my own repo. Given how much I'll adapt this theme to my own needs, I don't care about getting changes from the upstream or contributing back. So I disconnected from the fork tree. PR problem solved!
 
 The style guide approach I took is a great pattern for apps and sites built with AI. It creates a human readable, but structured natural language definition of styling that coding agents can consume and conform to. This is a pattern I want to extend into other areas of code.
 
